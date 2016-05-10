@@ -605,7 +605,7 @@ static NSString *const playbackRate = @"rate";
     } else {
         // TODO: not elegant way of triggering the dismiss event but somehow it isnt triggered
         // when user click DONE button
-        [_eventDispatcher sendInputEventWithName:@"onVideoFullscreenPlayerDidDismiss" body:@{@"target": self.reactTag, @"close": @YES}];
+        [_eventDispatcher sendInputEventWithName:@"onVideoFullscreenPlayerDidDismiss" body:@{@"target": self.reactTag, @"dismissed": @YES}];
     }
 }
 
